@@ -45,7 +45,7 @@ public abstract class Bosszuallo implements Szuperhos{
 
     @Override
     public String toString() {
-        return String.format("Bosszúalló: %f, van gyengesége: %b", this.szuperero, this.vanEGyengesege==true?"igen":"nem");
+        return String.format("Bosszúalló: %f - van gyengesége: %s", this.szuperero, this.vanEGyengesege == true ? "Van" : "Nincs");
 
     }
 }
