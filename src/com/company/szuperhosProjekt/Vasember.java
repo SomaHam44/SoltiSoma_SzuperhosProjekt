@@ -14,7 +14,9 @@ public class Vasember extends Bosszuallo implements Milliardos{
     @Override
     public void kutyutKeszit() {
         double novekedik = veletlen.nextDouble() * 10+1;
-        double ujSzuperero = this.getSzuperero() + novekedik;
+        this.szuperero += novekedik;
+
+
 
     }
 

@@ -1,8 +1,8 @@
 package com.company.szuperhosProjekt;
 
 public abstract class Bosszuallo implements Szuperhos{
-    private double szuperero;
-    private boolean vanEGyengesege;
+    protected double szuperero;
+    protected boolean vanEGyengesege;
 
     public Bosszuallo(double szuperero, boolean vanEGyengesege) {
         this.szuperero = szuperero;
@@ -45,6 +45,7 @@ public abstract class Bosszuallo implements Szuperhos{
 
     @Override
     public String toString() {
-        return String.format("Bosszúalló: %f, van gyengesége: %b", this.szuperero, this.vanEGyengesege? "Igen" : "Nem");
+        return String.format("Bosszúalló: %f, van gyengesége: %b", this.szuperero, this.vanEGyengesege==true?"igen":"nem");
+
     }
 }
